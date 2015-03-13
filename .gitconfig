@@ -1,0 +1,21 @@
+[user]
+	email = stephen@seatgeek.com
+	name = Stephen D'Amico
+[alias]
+        branch-name = "!git rev-parse --abbrev-ref HEAD"
+        publish = "!git push -u origin $(git branch-name)"
+        unpublish = "!git push origin :$(git branch-name)"
+        cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
+        unstage = reset HEAD
+        diffc = diff --cached
+        ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+        theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+        delete-merged-branches = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+[push]
+	default = tracking
+[help]
+	autocorrect = 1
+[branch]
+	autosetuprebase = always
+[core]
+	editor = atom --wait
