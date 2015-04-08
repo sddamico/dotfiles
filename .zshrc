@@ -63,7 +63,7 @@ update_android() {
   android update sdk --no-ui --force
 }
 
-gist_diff() {
+gistd() {
   echo "Git diff gist-er\nRef 1: "
   read ref1
   echo "Ref 2: "
@@ -73,13 +73,21 @@ gist_diff() {
   git diff $ref1..$ref2 | gist -f $name.diff
 }
 
-gistpaste() {
+gistp() {
   if [ -z "$1" ] ; then
     echo "Must supply filename for new gist"
     exit(1)
    else
     pbpaste | gist -f $1
   fi
+}
+
+adbr() {
+  adb kill-server && adb start-server
+}
+
+brewu() {
+  brew update && brew upgrade && brew cleanup
 }
 
 # Compilation flags
