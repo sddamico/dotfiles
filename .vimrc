@@ -16,6 +16,8 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tfnico/vim-gradle'
+Plug 'johnlim/vim-groovy'
 
 call plug#end()
 
@@ -46,3 +48,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 nmap <F8> :TagbarToggle<CR>
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.dex,*.apk,*.iml,*.idea/*,*.gradle/*
+
+let g:ctrlp_custom_ignore = {
+    \  'dir':  '\v[\/]\.(git|hg|svn|gradle|idea)$|build|gen',
+    \ }
