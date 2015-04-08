@@ -16,12 +16,13 @@ export ANDROID_HOME=/Users/stephen/android-sdk
 export ANDROID_TOOLS=$ANDROID_HOME/tools
 export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
 export TOOLS_DIR=~/tools
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export EDITOR='atom'
+export EDITOR='vim'
 
 ghpr() {
   read -p "Base [develop]: " base
