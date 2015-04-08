@@ -12,14 +12,18 @@ source $ZSH/oh-my-zsh.sh
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export ANDROID_HOME=/Users/stephen/android-sdk
+export ANDROID_HOME=/usr/local/opt/android-sdk
 export ANDROID_TOOLS=$ANDROID_HOME/tools
 export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
 export TOOLS_DIR=~/tools
+export USER_BIN_DIR=~/bin
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
+# path config...
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$PATH"
+export PATH="$TOOLS_DIR:$USER_BIN_DIR:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="$PATH:$TOOLS_DIR/dex-method-count/dex-method-counts/"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export EDITOR='vim'
@@ -35,11 +39,35 @@ ghpr() {
   open "https://github.com/seatgeek/android-app/compare/$base_branch...$branch_name?expand=1"
 }
 
+install_android() {
+  spawn android update sdk --no-ui --force
+  match_max 1000000
+  # Look for prompt
+  expect "*android-sdk-license*"
+  # Accept the prompt
+  send -- "yes\r"
+  # Look for prompt
+  expect "*google-gdk-license*"
+  # Accept the prompt
+  send -- "yes\r"
+  # Look for prompt
+  expect "*intel-android-extra-license*"
+  # Accept the prompt
+  send -- "yes\r"
+  # send blank line (\r) to make sure we get back to gui
+  send -- "\r"
+  expect eof
+}
+
+update_android() {
+  android update sdk --no-ui --force
+}
+
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-alias zshconfig="atom ~/.zshrc"
-alias ohmyzsh="atom ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
