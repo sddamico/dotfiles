@@ -4,7 +4,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew install wget zsh git brew-cask curl ffmpeg gcc go gradle \
   groovy leiningen libpng node openssl ruby python redis sqlite vim \
-  the_silver_searcher sloccount pidcat android ctags
+  the_silver_searcher sloccount pidcat android ctags gist
 
 mkdir workspace
 git clone git@github.com:altercation/solarized.git workspace/solarized

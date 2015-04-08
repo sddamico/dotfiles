@@ -63,6 +63,16 @@ update_android() {
   android update sdk --no-ui --force
 }
 
+gist_diff() {
+  echo "Git diff gist-er\nRef 1: "
+  read ref1
+  echo "Ref 2: "
+  read ref2
+  echo "Filename: "
+  read name
+  git diff $ref1..$ref2 | gist -f $name.diff
+}
+
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
