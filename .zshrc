@@ -73,6 +73,15 @@ gist_diff() {
   git diff $ref1..$ref2 | gist -f $name.diff
 }
 
+gistpaste() {
+  if [ -z "$1" ] ; then
+    echo "Must supply filename for new gist"
+    exit(1)
+   else
+    pbpaste | gist -f $1
+  fi
+}
+
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
