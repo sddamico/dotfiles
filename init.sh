@@ -2,7 +2,7 @@ cd ~
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install wget zsh git brew-cask curl ffmpeg gcc go gradle \
+brew install caskroom/cask/brew-cask wget zsh git curl ffmpeg gcc go gradle \
   groovy leiningen libpng node openssl ruby python redis sqlite vim \
   the_silver_searcher sloccount pidcat android ctags gist jq \
   cmake imagemagick 
