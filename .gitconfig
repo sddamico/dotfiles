@@ -18,4 +18,9 @@
 [branch]
 	autosetuprebase = always
 [core]
-	editor = atom --wait
+	editor = vim
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false

@@ -78,7 +78,9 @@ gistp() {
     echo "Must supply filename for new gist"
     exit(1)
    else
-    pbpaste | gist -f $1
+     gisturl=$(pbpaste | gist -f $1)
+     echo "Copying $gisturl to clipboard"
+     echo "$gisturl" | pbcopy
   fi
 }
 
@@ -86,9 +88,25 @@ adbr() {
   adb kill-server && adb start-server
 }
 
+android_backup() {
+  adb backup -apk -shared -all -nosystem -f "${HOME}/android-backups/backup-$(date "+%Y-%m-%d-%H%M%S").ab"
+}
+
 brewu() {
   brew update && brew upgrade && brew cleanup
 }
+
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
