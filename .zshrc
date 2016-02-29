@@ -28,6 +28,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export EDITOR='vim'
 
+export SEATGEEK_SSL_CERT_PINNING="false"
+
 ghpr() {
   read -p "Base [develop]: " base
   if [ -z "$base_branch" ]; then
@@ -108,6 +110,10 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
+to-gif() {
+  ffmpeg -i "$1" -vf scale=320:-1 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - "$2.gif"
+}
+
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
@@ -116,3 +122,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# added by travis gem
+[ -f /Users/stephen/.travis/travis.sh ] && source /Users/stephen/.travis/travis.sh
