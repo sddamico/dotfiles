@@ -1,0 +1,197 @@
+{
+  "pretty_seller_names": {
+    "mercury": "UberSeat",
+    "razorgator": "RazorGator",
+    "marketplace": "SeatGeek Marketplace",
+    "ticketcity": "TicketCity",
+    "crowdseats": "CrowdSeats",
+    "uberseat": "UberSeat",
+    "fanxchange": "Fanxchange",
+    "telecharge": "Telecharge",
+    "primesport": "Primesport",
+    "ticketnetwork": "TicketNetwork",
+    "scorebig": "ScoreBig",
+    "wantickets": "Wantickets",
+    "cvent": "CrowdTorch"
+  },
+  "meta": {
+    "status": 200
+  },
+  "ticket_group": {
+    "ga": true,
+    "electronic": true,
+    "event": {
+      "datetime_local": "2015-10-13T17:55:00",
+      "taxonomies": [],
+      "stats": {
+        "listing_count": null,
+        "average_price": null,
+        "lowest_price_good_deals": null,
+        "lowest_price": null,
+        "highest_price": null
+      },
+      "links": [],
+      "title": "Atlas Genius with Mainland",
+      "url": "https://seatgeek.com/event/show?id=2770430",
+      "time_tbd": false,
+      "created_at": "2015-08-20T00:00:00",
+      "performers": [
+        {
+          "short_name": null,
+          "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/huge.jpg",
+          "primary": true,
+          "home_venue_id": null,
+          "images": {
+            "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/huge.jpg",
+            "mongo": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/mongo.jpg",
+            "banner": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/banner.jpg",
+            "ipad_mini_explore": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/ipad_mini_explore.jpg",
+            "1200x525": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/1200x525.jpg",
+            "square_mid": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/square_mid.jpg",
+            "ipad_event_modal": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/ipad_event_modal.jpg",
+            "block": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/block.jpg",
+            "ipad_header": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/atlas-genius-b752ef/23359/ipad_header.jpg"
+          },
+          "has_upcoming_events": false,
+          "slug": "atlas-genius",
+          "stats": {
+            "event_count": null
+          },
+          "name": "Atlas Genius",
+          "url": "https://seatgeek.com/team/show?id=23359",
+          "id": 23359,
+          "score": 0.54448,
+          "taxonomies": [],
+          "type": "band"
+        },
+        {
+          "short_name": null,
+          "image": null,
+          "primary": false,
+          "home_venue_id": null,
+          "images": {},
+          "has_upcoming_events": false,
+          "slug": "mainland",
+          "stats": {
+            "event_count": null
+          },
+          "name": "Mainland",
+          "url": "https://seatgeek.com/team/show?id=143124",
+          "id": 143124,
+          "score": 0.3355,
+          "taxonomies": [],
+          "type": "band"
+        }
+      ],
+      "venue": {
+        "city": "Brooklyn",
+        "stats": {
+          "event_count": null
+        },
+        "name": "Music Hall of Williamsburg",
+        "extended_address": null,
+        "url": "https://seatgeek.com/seo/venue?id=399",
+        "country": "US",
+        "display_location": "Brooklyn, NY",
+        "links": [],
+        "id": 399,
+        "state": "NY",
+        "score": 0.54884,
+        "postal_code": "11211",
+        "location": {
+          "lat": 40.7193,
+          "lon": -73.9616
+        },
+        "address": "66 North 6th St.",
+        "timezone": "America/New_York",
+        "slug": "music-hall-of-williamsburg"
+      },
+      "announce_date": "2015-08-20T00:00:00",
+      "short_title": "Atlas Genius with Mainland",
+      "datetime_utc": "2015-09-30T00:00:00",
+      "score": 0.50567,
+      "datetime_tbd": false,
+      "visible_until_utc": "2015-10-13T23:45:00",
+      "date_tbd": false,
+      "type": "concert",
+      "id": 2770430
+    },
+    "row": "GA2",
+    "tickets": [
+      {
+        "barcode": {
+          "url": "https://api.seatgeek.com/2/tickets/1010217/qrcode_tm?timestamp=1444414999&user_id=1366648&signature=31a1dc885f5e82da7b254267eb1986bf402c11c3",
+          "type": "qrcode_tm",
+          "value": "6320732836246562"
+        },
+        "seat": "9",
+        "section_raw": "GA1",
+        "ga": true,
+        "id": 1010217,
+        "row": "GA2",
+        "name": null,
+        "obstructed_view": false,
+        "event_id": 2770430,
+        "transferable": true,
+        "notes": null,
+        "pdf_url": "https://api.seatgeek.com/2/tickets/1010217/pdf?timestamp=1444414999&user_id=1366648&signature=aa52164d60782733d36436c7638eae590a2211c6",
+        "wheelchair_accessible": false,
+        "owns": true,
+        "row_raw": "GA2",
+        "type": null,
+        "section": "GA1"
+      }
+    ],
+    "total_quantity": 1,
+    "url": "https://api.seatgeek.com/2/tickets/groups/1010217",
+    "section": "GA1",
+    "pdf_url": "https://api.seatgeek.com/2/tickets/groups/1010217/pdf?timestamp=1444414999&user_id=1366648&signature=a56ee19598f5efa657a17a6f6d8355480db4dba8",
+    "id": "1010217",
+    "ownership_quantity": 1,
+    "pending": false,
+    "history": [
+      {
+        "datetime_utc": "2015-09-25T20:43:22",
+        "data": {
+          "status": {
+            "datetime_utc": "2015-09-25T20:43:22",
+            "type": "accepted"
+          },
+          "sender": {
+            "username": "dallas",
+            "first_name": "Dallas",
+            "short_full_name": "Dallas G",
+            "last_name": "Gutauckis",
+            "full_name": "Dallas Gutauckis",
+            "images": {
+              "default": "https://chairnerd.global.ssl.fastly.net/images/users/529252/profile-394feb.jpg"
+            },
+            "id": 529252
+          },
+          "signature": "ee6b582a6b4e509a2b7f4602fad1dc69185ca76c",
+          "created_at": "2015-09-25T20:36:18",
+          "total": null,
+          "recipient": {
+            "username": "sddamico",
+            "first_name": "Stephen",
+            "short_full_name": "Stephen D",
+            "last_name": "D'Amico",
+            "full_name": "Stephen D'Amico",
+            "images": {
+              "default": "https://chairnerd.global.ssl.fastly.net/images/users/1366648/profile-c2dfb4.jpg"
+            },
+            "id": 1366648
+          },
+          "id": 2398,
+          "price_per_ticket": null,
+          "quantity": 1
+        },
+        "type": "transfer",
+        "ticket_ids": [
+          1010217
+        ],
+        "ticket_group_id": "1010217"
+      }
+    ]
+  }
+}
