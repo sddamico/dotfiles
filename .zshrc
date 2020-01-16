@@ -10,13 +10,6 @@ plugins=(git osx adb brew github gradle jira jsontools jump)
 
 source $ZSH/oh-my-zsh.sh
 
-# path config...
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$NDK:$PATH"
-export PATH="$TOOLS_DIR:$USER_BIN_DIR:$PATH"
-export PATH="$HOME/Library/Haskell/bin:$PATH"
-export PATH="$PATH:$TOOLS_DIR/dex-method-count/dex-method-counts/"
-export PATH="/usr/local/heroku/bin:$PATH"
-
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export ANDROID_HOME=/usr/local/opt/android-sdk
@@ -26,6 +19,14 @@ export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
 export TOOLS_DIR=~/tools
 export USER_BIN_DIR=~/bin
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+# path config...
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$PATH"
+export PATH="$TOOLS_DIR:$USER_BIN_DIR:$PATH"
+export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="$PATH:$TOOLS_DIR/dex-method-count/dex-method-counts/"
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$PATH:/usr/local/Cellar/adoptopenjdk-openjdk8"
 
 export EDITOR='vim'
 
