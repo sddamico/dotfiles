@@ -10,8 +10,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe'
 Plug 'bling/vim-airline'
 Plug 'plasticboy/vim-markdown'
-Plug 'altercation/vim-colors-solarized'
 Plug 'kien/ctrlp.vim'
+Plug 'lifepillar/vim-solarized8'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
@@ -28,8 +28,14 @@ call plug#end()
 
 syntax enable
 filetype plugin indent on
+
+" set Vim-specific sequences for RGB colors
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 
 set ai "autoindent
 set ff=unix "file format unix

@@ -1,0 +1,454 @@
+{
+  "widgets": [
+    {
+      "widget_type": "snapchat",
+      "data": {
+        "buttons": [
+          {
+            "type": "button",
+            "data_type": "action",
+            "value": {
+              "text": "Unlock Sticker",
+              "meta": {
+                "width": 300,
+                "pos_x": 0.7,
+                "attachment_url": "https://seatgeek.com",
+                "pos_y": 0.75,
+                "sticker_url": "https://seatgeek.com/images/social/ticket?date=Sep+26%2C+2018&time=7%3A15pm&event_title=Padres+at+Giants&section=VR328&seats=8&venue=AT%26T+Park&row=17",
+                "rotation": 0,
+                "is_animated": false,
+                "color": "#000000",
+                "height": 300
+              },
+              "type": "snapchat"
+            }
+          }
+        ],
+        "header": "Snap this moment with a custom sticker",
+        "alignment": "bottom_center",
+        "background": {
+          "color": "#FFFC00",
+          "image": "https://uploads-seatgeek.global.ssl.fastly.net/day_of_event/widgets/snapchat_tall.png",
+          "alignment": "center"
+        }
+      },
+      "version": "1",
+      "notification_text": {
+        "new": "Snapchat Filter"
+      },
+      "id": "snapchat"
+    },
+    {
+      "widget_type": "generic",
+      "items": [
+        {
+          "type": "banner",
+          "value": {
+            "image": {
+              "url": {
+                "url": "https://seatgeek.com/images/performers-landscape/san-francisco-giants-a76ec9/22/huge.jpg",
+                "accessibility_text": "AT&T Park"
+              }
+            },
+            "primary_title": [
+              {
+                "text": "At AT&T Park"
+              }
+            ],
+            "secondary_title": [
+              {
+                "color": "#F0F0F0",
+                "text": "10 Events"
+              }
+            ]
+          },
+          "data_type": "banner"
+        },
+        {
+          "items": [
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4642400",
+                    "path": "event/4642400"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 233,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Divisional Round: Los Angeles Chargers at New England Patriots"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Divisional Round: Los Angeles Chargers at New England Patriots",
+                      "id": 4642400
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4642381",
+                    "path": "event/4642381"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 315,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Divisional Round: Dallas Cowboys at Los Angeles Rams"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Divisional Round: Dallas Cowboys at Los Angeles Rams",
+                      "id": 4642381
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4470041",
+                    "path": "event/4470041"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 3400,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Super Bowl LIII"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Super Bowl LIII",
+                      "id": 4470041
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4642396",
+                    "path": "event/4642396"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 129,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Divisional Round: Indianapolis Colts at Kansas City Chiefs"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Divisional Round: Indianapolis Colts at Kansas City Chiefs",
+                      "id": 4642396
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4642367",
+                    "path": "event/4642367"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 254,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "The Rolling Stones"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "The Rolling Stones",
+                      "id": 4642367
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4265745",
+                    "path": "event/4265745"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 92,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Elton John"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Elton John",
+                      "id": 4265745
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4642391",
+                    "path": "event/4642391"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 675,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "AFC Championship: TBD at Los Angeles Chargers"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "AFC Championship: TBD at Los Angeles Chargers",
+                      "id": 4642391
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4481633",
+                    "path": "event/4481633"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 321,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Golden State Warriors at Los Angeles Lakers"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Golden State Warriors at Los Angeles Lakers",
+                      "id": 4481633
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4485379",
+                    "path": "event/4485379"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 67,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Philadelphia 76ers at New York Knicks"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Philadelphia 76ers at New York Knicks",
+                      "id": 4485379
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            },
+            {
+              "type": "row",
+              "value": {
+                "action": {
+                  "meta": {
+                    "url": "https://seatgeek.com/e/events/4628043",
+                    "path": "event/4628043"
+                  },
+                  "type": "route"
+                },
+                "secondary_title": [
+                  {
+                    "color": "#49af06",
+                    "money": {
+                      "currency": 223,
+                      "currency_code": "USD"
+                    }
+                  }
+                ],
+                "primary_title": [
+                  {
+                    "text": "Divisional Round: Philadelphia Eagles at New Orleans Saints"
+                  }
+                ],
+                "secondary_action": {
+                  "meta": {
+                    "item_to_track": {
+                      "type": "event",
+                      "name": "Divisional Round: Philadelphia Eagles at New Orleans Saints",
+                      "id": 4628043
+                    }
+                  },
+                  "type": "track_button"
+                }
+              },
+              "data_type": "row"
+            }
+          ],
+          "type": "list"
+        }
+      ],
+      "version": "a6a1fcb013a6d8352727aecdbefa1dfb66c12a6e",
+      "notification_text": {
+        "new": "Recommended Events",
+        "updated": "Updated Recommended Events"
+      },
+      "id": "recommended_events"
+    }
+  ],
+  "meta": {
+    "status": 200
+  }
+}

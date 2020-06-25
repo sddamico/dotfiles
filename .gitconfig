@@ -1,6 +1,8 @@
 [user]
 	email = stephen@seatgeek.com
 	name = Stephen D'Amico
+[github]
+  user = sddamico@gmail.com
 [alias]
         branch-name = "!git rev-parse --abbrev-ref HEAD"
         publish = "!git push -u origin $(git branch-name)"
