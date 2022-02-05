@@ -132,3 +132,6 @@ export PATH="/usr/local/opt/ruby@2.2/bin:$PATH"
 nuke-gradle() {
   jps|grep -E 'KotlinCompileDaemon|GradleDaemon'| awk '{print $1}'| xargs kill -9
 }
+export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
