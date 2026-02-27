@@ -1,3 +1,93 @@
 workspace/
 .vim/plugged/
 .vim/.netrwhist
+
+# macOS
+.DS_Store
+.CFUserTextEncoding
+.Trash/
+
+# macOS user directories
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Sites/
+
+# Shell history and state
+.bash_history
+.histfile
+.zsh_history
+.zsh_sessions/
+.zcompdump*
+.zshrc-e
+
+# Credentials and secrets
+.ssh/
+.netrc
+.rnd
+.Xauthority
+.emulator_console_auth_token
+wsddamico_com.csr
+wsddamico_com.key
+
+# Vim
+.viminfo
+
+# IDE/editor config
+.atom/
+.cursor/
+.vscode/
+
+# AI tools
+.claude.json
+.claude.json.backup
+.claude/
+!.claude/settings.json
+!.claude/skills/
+!.claude/plugins/
+.gemini/
+
+# Build tools and caches
+.BuildServer/
+.cache/
+.config/*
+!.config/ghostty/
+.gradle/
+.konan/
+.ivy2/
+.m2/
+.sbt/
+.local/
+.npm/
+.nvm/
+
+# Language-specific
+.android/
+.activator/
+.ghc/
+.holocolors/
+.meteor/
+.mono/
+.node_repl_history
+.oracle_jre_usage/
+.scala_history
+
+# Crypto
+.bitmonero/
+.shared-ringdb/
+
+# CI/services
+.heroku/
+.jenkins/
+.subversion/
+.travis/
+
+# Misc
+.cups/
+package-lock.json

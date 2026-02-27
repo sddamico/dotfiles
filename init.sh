@@ -1,13 +1,23 @@
 cd ~
+services restart postgresql@17
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew tap atlassian/acli
+brew tap datadog-labs/pack
+brew tap varabyte/tap
 
-brew install caskroom/cask/brew-cask wget zsh git curl ffmpeg gcc go gradle \
-  groovy leiningen libpng node openssl ruby python redis sqlite vim \
-  the_silver_searcher sloccount pidcat android ctags gist jq \
-  cmake imagemagick 
+brew install wget zsh git curl ffmpeg gcc go gradle \
+  groovy leiningen libpng node openssl ruby python python3 redis sqlite vim \
+  the_silver_searcher sloccount pidcat ctags gist jq \
+  cmake imagemagick llvm gh glab heroku pgweb postgresql@17 \
+  atlassian/acli/acli datadog-labs/pack/pup varabyte/tap/kobweb
 
-brew install llvm --with-clang
+brew install --cask claude ghostty
+
+curl -sL https://fonts.google.com/download?family=Inconsolata -o /tmp/Inconsolata.zip
+unzip -o /tmp/Inconsolata.zip -d /tmp/Inconsolata
+cp /tmp/Inconsolata/static/*.ttf ~/Library/Fonts/
+rm -rf /tmp/Inconsolata /tmp/Inconsolata.zip
 
 mkdir workspace
 git clone git@github.com:altercation/solarized.git workspace/solarized
@@ -16,6 +26,4 @@ git clone git@github.com:jkaving/intellij-colors-solarized.git workspace/intelli
 
 vim -c ":PlugInstall" -c ":q" -c ":q"
 
-cd ~/.vim/plugged/YouCompleteMe/
-./install.sh
-cd ~
+python3 ~/.vim/plugged/YouCompleteMe/install.py
