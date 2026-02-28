@@ -27,3 +27,22 @@ git clone git@github.com:jkaving/intellij-colors-solarized.git workspace/intelli
 vim -c ":PlugInstall" -c ":q" -c ":q"
 
 python3 ~/.vim/plugged/YouCompleteMe/install.py
+
+# Claude Code: register marketplaces and install plugins
+claude plugin marketplace add https://github.com/anthropics/claude-plugins-official
+claude plugin marketplace add https://github.com/777genius/claude-notifications-go
+claude plugin marketplace add https://github.com/ChromeDevTools/chrome-devtools-mcp
+claude plugin marketplace add ~/.claude/plugins/local
+
+claude plugin install frontend-design@claude-plugins-official
+claude plugin install context7@claude-plugins-official
+claude plugin install feature-dev@claude-plugins-official
+claude plugin install code-simplifier@claude-plugins-official
+claude plugin install commit-commands@claude-plugins-official
+claude plugin install security-guidance@claude-plugins-official
+claude plugin install kotlin-lsp@claude-plugins-official
+claude plugin install claude-md-management@claude-plugins-official
+claude plugin install skill-creator@claude-plugins-official
+claude plugin install claude-notifications-go@claude-notifications-go
+claude plugin install chrome-devtools-mcp@chrome-devtools-plugins
+claude plugin install todo@local

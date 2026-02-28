@@ -15,7 +15,16 @@
     "kotlin-lsp@claude-plugins-official": true,
     "claude-md-management@claude-plugins-official": true,
     "chrome-devtools-mcp@chrome-devtools-plugins": true,
-    "skill-creator@claude-plugins-official": true
+    "skill-creator@claude-plugins-official": true,
+    "todo@local": true
+  },
+  "extraKnownMarketplaces": {
+    "local": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/sddamico/.claude/plugins/local"
+      }
+    }
   },
   "effortLevel": "high"
 }

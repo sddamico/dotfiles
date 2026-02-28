@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "local",
+  "description": "Locally developed plugins",
+  "owner": {
+    "name": "sddamico"
+  },
+  "plugins": [
+    {
+      "name": "todo",
+      "description": "Manage your shared todo list stored in a GitHub Gist. Sub-commands for adding, listing, completing, and organizing todo items across projects.",
+      "version": "1.0.0",
+      "author": {
+        "name": "sddamico"
+      },
+      "source": "./todo"
+    }
+  ]
+}
